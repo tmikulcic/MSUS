@@ -1,0 +1,50 @@
+:root {
+  --white: #fff;
+  --blue-900: #011057;
+  --blue-700: #042583;
+  --blue-500: #1152b1;
+  --blue-300: #80b5f2;
+  --pink-900: #f10664;
+  --pink-700: #e10177;
+  --pink-500: #cb0083;
+  --orange-900: #f92c34;
+  --orange-500: #f85120;
+  --orange-300: #fb9802;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  opacity: 0.9;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(80%, 1200px);
+}
+
+.row,
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+}
